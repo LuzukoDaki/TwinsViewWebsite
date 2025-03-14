@@ -1,0 +1,185 @@
+body {
+  background-color: darkgrey;
+  font-family: Arial, sans-serif;
+}
+b {
+  color: darkblue;
+}
+
+strong {
+  color: darkblue;
+}
+img:first-of-type {
+  border: 5px solid gray;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: darkgrey; 
+  color: #333; 
+  line-height: 1.6; 
+  margin: 0;
+  padding: 20px; }
+
+
+img {
+  display: block; 
+  margin: 0 auto; 
+  border: 3px solid darkblue;
+  border-radius: 10px; 
+}
+
+/* Header Styles */
+h1 {
+  text-align: center; /* Center align */
+  color: darkblue; /* Change header color */
+  margin: 20px 0; /* Top and bottom margins */
+}
+
+/* Subheader Styles */
+h2 {
+  color: #444; /* Subheader color */
+  text-align: center; /* Center align */
+}
+
+/* Navigation Table Styles */
+nav {
+  margin: 20px 0; /* Margin for navigation */
+}
+
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Remove space between borders */
+}
+
+table td {
+  text-align: center; /* Centered links */
+  padding: 10px; /* Space around links */
+}
+
+table td a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Link color */
+  background-color: darkblue; /* Background color for links */
+  padding: 10px 15px; /* Padding for links */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+table td a:hover {
+  background-color: lightblue; /* Change color on hover */
+}
+
+/* Flexbox for Image Layout */
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Evenly space content */
+  flex-wrap: wrap; /* Allow wrapping */
+  margin: 20px 0; /* Top and bottom margins */
+}
+
+/* Comments Section Styles */
+h3 {
+  text-align: center; /* Center align */
+  color: #555; /* Color for comments */
+}
+
+
+@media (max-width: 768px) {
+  div {
+      flex-direction: column; 
+      align-items: center; /* Center items */
+  }
+
+  img {
+      width: 100%; 
+      height: auto; /*  aspect ratio */
+  }
+}
+@media (max-width: 960px) {
+  body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  h1 {
+      font-size: 1.8em; /* Smaller heading size */
+  }
+
+  nav table {
+      display: block; 
+      text-align: center; 
+  }
+
+  nav table td {
+      display: inline-block; 
+      margin: 5px; /* Add space between links */
+  }
+
+  .container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; 
+  }
+
+  img {
+      width: 100%;
+      height: auto;
+  }
+
+ }
+ @media (max-width: 960px) and (orientation: portrait) {
+  body {
+      font-size: 14px; /* Adjust base font size */
+      padding: 10px; /* Add padding for mobile */
+  }
+
+  h1 {
+      font-size: 2em; /* Adjust heading size */
+  }
+
+  h2 {
+      font-size: 1.5em; /* Adjust subheading size */
+  }
+
+  nav table {
+      display: block; /* Stack navigation links vertically */
+      width: 100%; /* Full width for nav links */
+  }
+
+  nav table td {
+      display: block; /* Make navigation links block elements */
+      margin: 10px 0; /* Add vertical spacing between links */
+      text-align: center; /* Center-align links */
+  }
+
+  .container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+  }
+
+  img {
+      width: 100%; /* Make images responsive */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Add space below images */
+  }
+
+  p {
+      font-size: 16px; /* Adjust paragraph text size */
+      text-align: center; /* Center align text */
+  }
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+#backToTop:hover {
+  background-color: lightblue; /* Change color on hover */
+}

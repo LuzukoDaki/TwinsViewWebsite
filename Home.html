@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="./Style.css">
+
+<title>Sport in Twinsview</title>
+</head>
+
+<body>
+
+<h1 align="center">Sport in TwinsView</h1>
+<p align="center"> <img src="./images/Home Page/-notan8.jpg"
+     height="150" width="200" </p> 
+   
+     <nav>
+      <table>
+           <tr>
+               <td><a href="Home.html">Home Page</a></td>
+               <td><a href="About.html">About Us</a></td>
+               <td><a href="ContactUs.html">Contact Us</a></td>
+               <td><a href="SportPages.html">Sport Page</a></td>
+               <td><a href="FanComment.html">Fan Comment Page</a></td>
+    
+           </tr>
+       </table>
+    </nav>
+
+
+<h1> <b>Sport News</b> </h1>
+<p> <b>Local News</b> : <b>Football</b> (Betway Premier League - PSL Cups - Bafana Bafana) | <b>Athletics</b> (SA Atheltics Championship)
+    | <b>Rugby</b> (URC - Springboks - Blitzboks) | <b>Cricket</b> (Proteas)</p>
+
+<p> <b>International News</b> : <b>Football</b> (Premier League - Champions League - International/Intercontinental Cups)
+     | <b>Athletics</b> (World Championship - Diamond League - Olympics)
+        | <b>Rugby</b> (URC - International Championships) | <b>Cricket</b> (Intercontinental Championships)</p>
+<h2> <b>Sport Updates | Click the Links down below &#8595</b> </h2>
+
+<div style="display: flex; flex-direction: row; justify-content: space-between;">
+
+ <p align="left"> <img src="./images/Home Page/soccer-ball-vector-icon.jpg" height="200" width="300"/>
+    <a href="https://youtu.be/eMr-QYL_jkY?si=RN4QoOnpd1hxn__q">YouTube</a>
+    <a href="https://www.instagram.com/sporttwinsview/">Instagram</a>
+  </p>
+
+ <p align="center"> <img src="./images/Home Page/Rugby-ball-by-The-Crafty-Skater.jpg" height="200" width="300"/>
+    <a href="https://youtu.be/eMr-QYL_jkY?si=RN4QoOnpd1hxn__q">YouTube</a>
+    <a href="https://www.instagram.com/sporttwinsview/">Instagram</a>
+  </p>
+
+ <p align="right"> <img src="./images/Home Page/athletics-symbols-2.jpg " height="200" width="300"/>
+    <a href="https://youtu.be/eMr-QYL_jkY?si=RN4QoOnpd1hxn__q">YouTube</a>
+    <a href="https://www.instagram.com/sporttwinsview/">Instagram</a>
+  </p> 
+</div>
+
+<button id="backToTop" style="display: none;">Back to Top</button>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+      // Shows the person who is using on the web page the button I created
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+              $('#backToTop').fadeIn();
+          } else {
+              $('#backToTop').fadeOut();
+          }
+      });
+
+      // When the button is clicked the web page should be like scrolled to the top
+      $('#backToTop').click(function() {
+          $('html, body').animate({ scrollTop: 0 }, 800);
+          return false; // Prevents the like default like action
+      });
+  });
+</script>
+</body>
+</html>
+
+
+
+
+

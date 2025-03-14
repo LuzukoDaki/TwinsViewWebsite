@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sport in TwinsView</title>
+    <link rel="stylesheet" href="./Style.css">
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            if (name === "" || email === "" || subject === "" || message === "") {
+                alert("All fields are required!");
+                event.preventDefault();
+            } else if (!validateEmail(email)) {
+                alert("Please enter a valid email address!");
+                event.preventDefault();
+            }
+        });
+
+        function validateEmail(email) {
+            var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return re.test(email);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="./images/Home Page/-notan8.jpg" alt="Sport in TwinsView Logo" width="150">
+        <h1>Contact Sport in TwinsView</h1>
+    </header>
+    
+    <nav>
+       <table>
+            <tr>
+                <td><a href="Home.html">Home Page</a></td>
+                <td><a href="About.html">About Us</a></td>
+                <td><a href="ContactUs.html">Contact Us</a></td>
+                <td><a href="SportPages.html">Sport Page</a></td>
+                <td><a href="FanComment.html">Fan Comment Page</a></td>
+            </tr>
+       </table>
+    </nav>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>We're here to answer any questions you have about Sport in TwinsView. Whether you're interested in sports coverage or just want to share your thoughts, feel free to contact us!</p>
+    </section>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>
+            <strong>Phone:</strong> 0653958207<br>
+            <strong>Email:</strong> <a href="mailto:lzkdaki@gmail.com">lzkdaki@gmail.com</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Send Us a Message</h2>
+        <form id="contactForm" action="mailto:lzkdaki@gmail.com" method="POST" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sport in TwinsView. All rights reserved.</p>
+    </footer>
+</body>
+</html>
